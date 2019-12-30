@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5B44C723B9EEFD00752C2B /* ThemeCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B44C623B9EEFD00752C2B /* ThemeCreator.swift */; };
+		3C5B44C923B9EF0600752C2B /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B44C823B9EF0600752C2B /* Themes.swift */; };
 		3CA9503123A7B372006C2AA9 /* ApplyColorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9503023A7B372006C2AA9 /* ApplyColorFilter.swift */; };
 		3CA9503323A7B5EB006C2AA9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9503223A7B5EB006C2AA9 /* DataService.swift */; };
 		3CA9503623A7CACB006C2AA9 /* GistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9503523A7CACB006C2AA9 /* GistModel.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		3C139697238D197600BDC619 /* Playground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Playground-Bridging-Header.h"; sourceTree = "<group>"; };
 		3C139698238D197700BDC619 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3C5B44C623B9EEFD00752C2B /* ThemeCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCreator.swift; sourceTree = "<group>"; };
+		3C5B44C823B9EF0600752C2B /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		3CA9503023A7B372006C2AA9 /* ApplyColorFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyColorFilter.swift; sourceTree = "<group>"; };
 		3CA9503223A7B5EB006C2AA9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3CA9503523A7CACB006C2AA9 /* GistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistModel.swift; sourceTree = "<group>"; };
@@ -59,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C5B44C523B9EEDE00752C2B /* The Factory Method */ = {
+			isa = PBXGroup;
+			children = (
+				3C5B44C623B9EEFD00752C2B /* ThemeCreator.swift */,
+				3C5B44C823B9EF0600752C2B /* Themes.swift */,
+			);
+			path = "The Factory Method";
+			sourceTree = "<group>";
+		};
 		3CA9503423A7CA9B006C2AA9 /* Github Service and Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +92,7 @@
 		3CC0438923AB742B00EAB4B6 /* Desing Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				3C5B44C523B9EEDE00752C2B /* The Factory Method */,
 				3CF083B523B25E10007A1A8F /* The Builder */,
 				3CFE422523B2452B0037623C /* The Prototype */,
 				3CC0438B23AB744700EAB4B6 /* The Singleton */,
@@ -226,7 +240,9 @@
 				3CA9503323A7B5EB006C2AA9 /* DataService.swift in Sources */,
 				3CA9503623A7CACB006C2AA9 /* GistModel.swift in Sources */,
 				3CF083B923B2660A007A1A8F /* LaptopInformation.swift in Sources */,
+				3C5B44C723B9EEFD00752C2B /* ThemeCreator.swift in Sources */,
 				3CEA52D423618D7D005048F6 /* AppDelegate.m in Sources */,
+				3C5B44C923B9EF0600752C2B /* Themes.swift in Sources */,
 				3CA9503123A7B372006C2AA9 /* ApplyColorFilter.swift in Sources */,
 				3CC0438D23AB745D00EAB4B6 /* AppSettings.swift in Sources */,
 				3CF083B723B25FB3007A1A8F /* LaptopBuilder.swift in Sources */,

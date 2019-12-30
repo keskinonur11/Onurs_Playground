@@ -13,20 +13,27 @@ class MainView: UIViewController {
     
     @IBOutlet weak var batteryImage: UIImageView!
     
+    @IBOutlet weak var factoryMethodLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-               
+       applyColorFilterToImage()
 //        networking()
 //        prototypePattern()
-        builderPattern()
+//        builderPattern()
+        factoryMethod()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        batteryImage.image = ApplyColorFilter.shared.applyFilter(image: (batteryImage.image?.cgImage)!, red: 0, green: 204, blue: 0, inputDensity: 1.0)
     }
         
+    func applyColorFilterToImage() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+            self.batteryImage.image = ApplyColorFilter.shared.applyFilter(image: (self.batteryImage.image?.cgImage)!, red: 0, green: 204, blue: 0, inputDensity: 1.0)
+        })
+    }
+    
     func networking() {
         DataService.shared.fetchGists() { (result) in
             switch result {
@@ -70,5 +77,26 @@ class MainView: UIViewController {
         config = LaptopConfiguration(size: .fifteenInch, processor: .i7, graphics: .radeonVegaPro20, baseModel: nil)
         myComp = LaptopBuilderDirector.shared.buildALaptop(configuration: config)
         print(myComp)
+    }
+    
+    func factoryMethod() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+            let purpleTheme = ThemeCreator.makeTheme(profile: .purple)
+            self.factoryMethodLabel.backgroundColor = purpleTheme.backgroundColor
+            self.factoryMethodLabel.textColor = purpleTheme.textColor
+        })
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
+            let darkTheme = ThemeCreator.makeTheme(profile: .dark)
+            self.factoryMethodLabel.backgroundColor = darkTheme.backgroundColor
+            self.factoryMethodLabel.textColor = darkTheme.textColor
+        })
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6, execute: {
+            let blueTheme = ThemeCreator.makeTheme(profile: .blue)
+            self.factoryMethodLabel.backgroundColor = blueTheme.backgroundColor
+            self.factoryMethodLabel.textColor = blueTheme.textColor
+        })
     }
 }
