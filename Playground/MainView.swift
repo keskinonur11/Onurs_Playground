@@ -21,7 +21,8 @@ class MainView: UIViewController {
 //        networking()
 //        prototypePattern()
 //        builderPattern()
-        factoryMethod()
+//        factoryMethod()
+        adapterPattern()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -97,6 +98,17 @@ class MainView: UIViewController {
             let blueTheme = ThemeCreator.makeTheme(profile: .blue)
             self.factoryMethodLabel.backgroundColor = blueTheme.backgroundColor
             self.factoryMethodLabel.textColor = blueTheme.textColor
+        })
+    }
+    
+    func adapterPattern() {
+        let sharer = SocialSharer()
+        sharer.shareEverywhere(message: "Hello to yall")
+        
+        sharer.share(message: "hmm", serviceType: .facebook, completionHandler: { (error) in
+            if error != nil {
+                print("Error sending message")
+            }
         })
     }
 }
