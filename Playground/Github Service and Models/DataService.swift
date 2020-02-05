@@ -62,8 +62,8 @@ class DataService {
         var postRequest = URLRequest(url: postURL)
         postRequest.httpMethod = "POST"
         
-        //Basic auth
-        let authString = "keskin.onur11@gmail.com:5122482-onuRR"
+        //Basic auth, accidental release of this roflmao
+        let authString = "blabla@gmail.com:blablabla"
         var authStringBase64 = ""
         
         if let authData = authString.data(using: .utf8) {
