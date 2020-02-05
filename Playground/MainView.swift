@@ -21,7 +21,7 @@ class MainView: UIViewController {
 //        networking()
 //        prototypePattern()
 //        builderPattern()
-//        factoryMethod()
+        factoryMethod()
 //        adapterPattern()
         getOperationsFromDb()
         addToOperations(operationName: "An Operation")
