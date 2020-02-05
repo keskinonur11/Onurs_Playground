@@ -23,9 +23,9 @@ class MainView: UIViewController {
 //        builderPattern()
         factoryMethod()
 //        adapterPattern()
-        getOperationsFromDb()
+        var oprs = getOperationsFromDb()
         addToOperations(operationName: "An Operation")
-        getOperationsFromDb()
+        oprs = getOperationsFromDb(sortBy: .name)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -115,13 +115,28 @@ class MainView: UIViewController {
         })
     }
     
-    func getOperationsFromDb() {
-        let operations = OperationsManager.shared.getOperationsHistory()
+    func getOperationsFromDb(sortBy: OperationsSortType? = nil) -> [Operations] {
+        var operations = OperationsManager.shared.getOperationsHistory()
+        
+        switch sortBy {
+        case .id:
+            operations.sort { $0.id! < $1.id! }
+        case .name:
+            operations.sort { $0.name < $1.name }
+        default:
+            break
+        }
+        
         print(operations)
+        return operations
     }
     
     func addToOperations(operationName: String) {
         let result = OperationsManager.shared.addToOperations(operationName: operationName)
         print(result)
     }
+}
+
+enum OperationsSortType {
+    case id, name
 }
