@@ -41,14 +41,7 @@
 #pragma mark - Setup methods
 
 - (void)setupDatabase:(UIApplication *)application {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *dbPath = [documentsDirectory stringByAppendingPathComponent:@"OnursPlaygroundDb.sqlite"];
-    
-    if(![[NSFileManager defaultManager] fileExistsAtPath:dbPath]) {
-        [DatabaseConnector setupDatabase:application error:nil];
-    }
-    
+    [DatabaseConnector setupDatabase:application error:nil];    
 }
 
 
