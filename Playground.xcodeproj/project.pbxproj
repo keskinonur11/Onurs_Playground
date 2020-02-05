@@ -30,6 +30,7 @@
 		3CF083B723B25FB3007A1A8F /* LaptopBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF083B623B25FB3007A1A8F /* LaptopBuilder.swift */; };
 		3CF083B923B2660A007A1A8F /* LaptopInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF083B823B2660A007A1A8F /* LaptopInformation.swift */; };
 		3CFE422723B246C30037623C /* PointAndShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFE422623B246C30037623C /* PointAndShape.swift */; };
+		4362D8DBA7199871CCD790FB /* Pods_Playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED603E2C17378EB80B7D8653 /* Pods_Playground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CCFFF8923E9662A005C37C9 /* GRDB.framework in Frameworks */,
+				4362D8DBA7199871CCD790FB /* Pods_Playground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
