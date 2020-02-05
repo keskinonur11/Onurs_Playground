@@ -1,3 +1,3 @@
 # Onurs_Playground
 
-Just a playground of myself. bunch of stuff 
+Just a playground for myself. bunch of stuff 
