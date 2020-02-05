@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,10 @@
 		3CA9503623A7CACB006C2AA9 /* GistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9503523A7CACB006C2AA9 /* GistModel.swift */; };
 		3CBECF70238D1CE0003040BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C139698238D197700BDC619 /* MainView.swift */; };
 		3CC0438D23AB745D00EAB4B6 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC0438C23AB745D00EAB4B6 /* AppSettings.swift */; };
+		3CCFFF8923E9662A005C37C9 /* GRDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCFFF8823E9662A005C37C9 /* GRDB.framework */; };
+		3CCFFF8E23E969A0005C37C9 /* OnursPlaygroundDb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3CCFFF8D23E969A0005C37C9 /* OnursPlaygroundDb.sqlite */; };
+		3CCFFF9123E97845005C37C9 /* OperationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCFFF9023E97845005C37C9 /* OperationsManager.swift */; };
+		3CE5B1DF23E9655D004D1806 /* DatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5B1DE23E9655D004D1806 /* DatabaseConnector.swift */; };
 		3CEA52D423618D7D005048F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA52D323618D7D005048F6 /* AppDelegate.m */; };
 		3CEA52D723618D7D005048F6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA52D623618D7D005048F6 /* SceneDelegate.m */; };
 		3CEA52DA23618D7D005048F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA52D923618D7D005048F6 /* ViewController.m */; };
@@ -29,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		285503A9FFCB207623D22123 /* Pods-Playground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground.debug.xcconfig"; path = "Target Support Files/Pods-Playground/Pods-Playground.debug.xcconfig"; sourceTree = "<group>"; };
 		3C139697238D197600BDC619 /* Playground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Playground-Bridging-Header.h"; sourceTree = "<group>"; };
 		3C139698238D197700BDC619 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3C55D01123BF62C600EA5F64 /* SocialSharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSharing.swift; sourceTree = "<group>"; };
@@ -39,6 +44,10 @@
 		3CA9503223A7B5EB006C2AA9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3CA9503523A7CACB006C2AA9 /* GistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistModel.swift; sourceTree = "<group>"; };
 		3CC0438C23AB745D00EAB4B6 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		3CCFFF8823E9662A005C37C9 /* GRDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GRDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCFFF8D23E969A0005C37C9 /* OnursPlaygroundDb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = OnursPlaygroundDb.sqlite; sourceTree = "<group>"; };
+		3CCFFF9023E97845005C37C9 /* OperationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsManager.swift; sourceTree = "<group>"; };
+		3CE5B1DE23E9655D004D1806 /* DatabaseConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseConnector.swift; sourceTree = "<group>"; };
 		3CEA52CF23618D7D005048F6 /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEA52D223618D7D005048F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CEA52D323618D7D005048F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +63,8 @@
 		3CF083B623B25FB3007A1A8F /* LaptopBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaptopBuilder.swift; sourceTree = "<group>"; };
 		3CF083B823B2660A007A1A8F /* LaptopInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaptopInformation.swift; sourceTree = "<group>"; };
 		3CFE422623B246C30037623C /* PointAndShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointAndShape.swift; sourceTree = "<group>"; };
+		939A53382F764FB01B508446 /* Pods-Playground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground.release.xcconfig"; path = "Target Support Files/Pods-Playground/Pods-Playground.release.xcconfig"; sourceTree = "<group>"; };
+		ED603E2C17378EB80B7D8653 /* Pods_Playground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +72,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCFFF8923E9662A005C37C9 /* GRDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		129A7025B93ECA525DBE5C48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CCFFF8823E9662A005C37C9 /* GRDB.framework */,
+				ED603E2C17378EB80B7D8653 /* Pods_Playground.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3C55D00E23BF628100EA5F64 /* Structural Patterns */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,11 +159,31 @@
 			path = "The Singleton";
 			sourceTree = "<group>";
 		};
+		3CCFFF8F23E977DF005C37C9 /* DatabaseManagers */ = {
+			isa = PBXGroup;
+			children = (
+				3CCFFF9023E97845005C37C9 /* OperationsManager.swift */,
+			);
+			path = DatabaseManagers;
+			sourceTree = "<group>";
+		};
+		3CE5B1DB23E959E8004D1806 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3CCFFF8F23E977DF005C37C9 /* DatabaseManagers */,
+				3CCFFF8D23E969A0005C37C9 /* OnursPlaygroundDb.sqlite */,
+				3CE5B1DE23E9655D004D1806 /* DatabaseConnector.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		3CEA52C623618D7D005048F6 = {
 			isa = PBXGroup;
 			children = (
 				3CEA52D123618D7D005048F6 /* Playground */,
 				3CEA52D023618D7D005048F6 /* Products */,
+				B32A3DB0D40AE33F74B77179 /* Pods */,
+				129A7025B93ECA525DBE5C48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +198,7 @@
 		3CEA52D123618D7D005048F6 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				3CE5B1DB23E959E8004D1806 /* Database */,
 				3CC0438923AB742B00EAB4B6 /* Desing Patterns */,
 				3CA9503723A7CB1D006C2AA9 /* Image related codes */,
 				3CA9503423A7CA9B006C2AA9 /* Github Service and Models */,
@@ -194,6 +236,15 @@
 			path = "The Prototype";
 			sourceTree = "<group>";
 		};
+		B32A3DB0D40AE33F74B77179 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				285503A9FFCB207623D22123 /* Pods-Playground.debug.xcconfig */,
+				939A53382F764FB01B508446 /* Pods-Playground.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CEA52E823618D7F005048F6 /* Build configuration list for PBXNativeTarget "Playground" */;
 			buildPhases = (
+				4BEBA54B3625643E01007463 /* [CP] Check Pods Manifest.lock */,
 				3CEA52CB23618D7D005048F6 /* Sources */,
 				3CEA52CC23618D7D005048F6 /* Frameworks */,
 				3CEA52CD23618D7D005048F6 /* Resources */,
+				3B4FD29C825AD4E61910BCFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,11 +307,54 @@
 			files = (
 				3CEA52E223618D7F005048F6 /* LaunchScreen.storyboard in Resources */,
 				3CEA52DF23618D7F005048F6 /* Assets.xcassets in Resources */,
+				3CCFFF8E23E969A0005C37C9 /* OnursPlaygroundDb.sqlite in Resources */,
 				3CEA52DD23618D7D005048F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B4FD29C825AD4E61910BCFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Playground/Pods-Playground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Playground/Pods-Playground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Playground/Pods-Playground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BEBA54B3625643E01007463 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Playground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3CEA52CB23618D7D005048F6 /* Sources */ = {
@@ -268,6 +364,8 @@
 				3CFE422723B246C30037623C /* PointAndShape.swift in Sources */,
 				3CEA52DA23618D7D005048F6 /* ViewController.m in Sources */,
 				3CA9503323A7B5EB006C2AA9 /* DataService.swift in Sources */,
+				3CCFFF9123E97845005C37C9 /* OperationsManager.swift in Sources */,
+				3CE5B1DF23E9655D004D1806 /* DatabaseConnector.swift in Sources */,
 				3CA9503623A7CACB006C2AA9 /* GistModel.swift in Sources */,
 				3C55D01223BF62C600EA5F64 /* SocialSharing.swift in Sources */,
 				3CF083B923B2660A007A1A8F /* LaptopInformation.swift in Sources */,
@@ -418,12 +516,15 @@
 		};
 		3CEA52E923618D7F005048F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 285503A9FFCB207623D22123 /* Pods-Playground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Playground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,12 +540,15 @@
 		};
 		3CEA52EA23618D7F005048F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 939A53382F764FB01B508446 /* Pods-Playground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Playground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

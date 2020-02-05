@@ -22,7 +22,8 @@ class MainView: UIViewController {
 //        prototypePattern()
 //        builderPattern()
 //        factoryMethod()
-        adapterPattern()
+//        adapterPattern()
+        getOperationsFromDb()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -110,5 +111,10 @@ class MainView: UIViewController {
                 print("Error sending message")
             }
         })
+    }
+    
+    func getOperationsFromDb() {
+        let operations = OperationsManager.shared.getOperationsHistory()
+        print(operations)
     }
 }
