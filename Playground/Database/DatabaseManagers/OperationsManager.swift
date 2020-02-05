@@ -10,7 +10,7 @@ import Foundation
 import GRDB
 
 struct Operations: Codable, FetchableRecord, MutablePersistableRecord {
-    var id: Int64
+    var id: Int64?
     var name: String
     
     enum CodingKeys: String, CodingKey {
@@ -36,13 +36,16 @@ class OperationsManager {
         return operationHistory
     }
     
-    func addToOperations() {
-//        player.name = nameTextField.text ?? ""
-//               player.score = scoreTextField.text.flatMap { Int($0) } ?? 0
-//               self.player = player
-//
-//               try! dbQueue.inDatabase { db in
-//                   try player.save(db)
-//               }
+    func addToOperations(operationName: String)  -> Bool {
+        do {
+            var operation = Operations(id: nil, name: operationName)
+            try DatabaseConnector.dbQueue.inDatabase { db in
+                try operation.save(db)
+            }
+        } catch {
+             print("Error at addToOperations")
+            return false
+        }
+        return true
     }
 }

@@ -24,7 +24,7 @@ import UIKit
             .url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             .appendingPathComponent("OnursPlaygroundDb.sqlite")
             
-            if(!FileManager.default.fileExists(atPath: databaseURL.absoluteString)) {
+            if(!FileManager.default.fileExists(atPath: databaseURL.path)) {
                 let dbFilePath = Bundle.main.path(forResource: "OnursPlaygroundDb.sqlite", ofType: nil)
                 try FileManager.default.copyItem(atPath: dbFilePath!, toPath: databaseURL.path)
             }

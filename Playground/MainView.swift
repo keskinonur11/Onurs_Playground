@@ -24,6 +24,8 @@ class MainView: UIViewController {
 //        factoryMethod()
 //        adapterPattern()
         getOperationsFromDb()
+        addToOperations(operationName: "An Operation")
+        getOperationsFromDb()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -116,5 +118,10 @@ class MainView: UIViewController {
     func getOperationsFromDb() {
         let operations = OperationsManager.shared.getOperationsHistory()
         print(operations)
+    }
+    
+    func addToOperations(operationName: String) {
+        let result = OperationsManager.shared.addToOperations(operationName: operationName)
+        print(result)
     }
 }
