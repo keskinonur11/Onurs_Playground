@@ -6,8 +6,18 @@
 	<dict>
 		<key>Playground.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3CEA52CE23618D7D005048F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
