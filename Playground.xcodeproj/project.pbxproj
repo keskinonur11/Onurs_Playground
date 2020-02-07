@@ -11,6 +11,8 @@
 		3C55D01423BF63B400EA5F64 /* SocialSharer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55D01323BF63B400EA5F64 /* SocialSharer.swift */; };
 		3C5B44C723B9EEFD00752C2B /* ThemeCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B44C623B9EEFD00752C2B /* ThemeCreator.swift */; };
 		3C5B44C923B9EF0600752C2B /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B44C823B9EF0600752C2B /* Themes.swift */; };
+		3C61135323ED91D700001DB0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61135223ED91D700001DB0 /* CircleView.swift */; };
+		3C61135523ED95EC00001DB0 /* LiveRenderingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61135423ED95EC00001DB0 /* LiveRenderingViewController.swift */; };
 		3CA9503123A7B372006C2AA9 /* ApplyColorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9503023A7B372006C2AA9 /* ApplyColorFilter.swift */; };
 		3CA9503323A7B5EB006C2AA9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9503223A7B5EB006C2AA9 /* DataService.swift */; };
 		3CA9503623A7CACB006C2AA9 /* GistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9503523A7CACB006C2AA9 /* GistModel.swift */; };
@@ -41,6 +43,8 @@
 		3C55D01323BF63B400EA5F64 /* SocialSharer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSharer.swift; sourceTree = "<group>"; };
 		3C5B44C623B9EEFD00752C2B /* ThemeCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCreator.swift; sourceTree = "<group>"; };
 		3C5B44C823B9EF0600752C2B /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		3C61135223ED91D700001DB0 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		3C61135423ED95EC00001DB0 /* LiveRenderingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRenderingViewController.swift; sourceTree = "<group>"; };
 		3CA9503023A7B372006C2AA9 /* ApplyColorFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyColorFilter.swift; sourceTree = "<group>"; };
 		3CA9503223A7B5EB006C2AA9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3CA9503523A7CACB006C2AA9 /* GistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistModel.swift; sourceTree = "<group>"; };
@@ -127,6 +131,15 @@
 			path = "The Factory Method";
 			sourceTree = "<group>";
 		};
+		3C61135123ED919400001DB0 /* Live Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				3C61135223ED91D700001DB0 /* CircleView.swift */,
+				3C61135423ED95EC00001DB0 /* LiveRenderingViewController.swift */,
+			);
+			path = "Live Rendering";
+			sourceTree = "<group>";
+		};
 		3CA9503423A7CA9B006C2AA9 /* Github Service and Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +213,7 @@
 		3CEA52D123618D7D005048F6 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				3C61135123ED919400001DB0 /* Live Rendering */,
 				3CE5B1DB23E959E8004D1806 /* Database */,
 				3CC0438923AB742B00EAB4B6 /* Desing Patterns */,
 				3CA9503723A7CB1D006C2AA9 /* Image related codes */,
@@ -365,6 +379,8 @@
 			files = (
 				3CFE422723B246C30037623C /* PointAndShape.swift in Sources */,
 				3CEA52DA23618D7D005048F6 /* ViewController.m in Sources */,
+				3C61135323ED91D700001DB0 /* CircleView.swift in Sources */,
+				3C61135523ED95EC00001DB0 /* LiveRenderingViewController.swift in Sources */,
 				3CA9503323A7B5EB006C2AA9 /* DataService.swift in Sources */,
 				3CCFFF9123E97845005C37C9 /* OperationsManager.swift in Sources */,
 				3CE5B1DF23E9655D004D1806 /* DatabaseConnector.swift in Sources */,

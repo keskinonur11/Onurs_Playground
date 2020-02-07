@@ -41,7 +41,7 @@
 #pragma mark - Setup methods
 
 - (void)setupDatabase:(UIApplication *)application {
-    [DatabaseConnector setupDatabase:application error:nil];    
+    [DatabaseConnector setupDatabase:application error:nil];
 }
 
 
