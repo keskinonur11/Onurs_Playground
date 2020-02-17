@@ -6,6 +6,8 @@
 //  Copyright © 2020 Onur Keskin. All rights reserved.
 //
 
+//isSent property is used for simulating share result
+
 import Foundation
 
 protocol SocialSharing {
